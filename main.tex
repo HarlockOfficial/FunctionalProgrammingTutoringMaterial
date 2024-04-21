@@ -1,0 +1,110 @@
+\documentclass[xcolor=x11names,compress]{beamer}
+%% General document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{decorations.fractals}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Beamer Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\useoutertheme[subsection=false,shadow]{miniframes}
+\useinnertheme{default}
+\usefonttheme{serif}
+\usepackage{palatino}
+\usepackage{setspace,textcomp,soul}
+\usepackage{listings}
+
+\setbeamerfont{title like}{shape=\scshape}
+\setbeamerfont{frametitle}{shape=\scshape}
+\definecolor{cream}{RGB}{253,230,228}
+\definecolor{greenBG}{RGB}{1,35,0}
+\definecolor{bluUnicam}{RGB}{27,43,74}
+\definecolor{redUnicam}{RGB}{219,0,36}
+\definecolor{orangeUnicam}{RGB}{234,114,40}
+\setbeamercolor*{lower separation line head}{bg=redUnicam} 
+\setbeamercolor*{normal text}{fg=cream} 
+\setbeamercolor*{alerted text}{fg=red} 
+\setbeamercolor*{example text}{fg=black} 
+\setbeamercolor*{structure}{fg=cream} 
+\setbeamercolor*{frametitle}{fg=cream}
+
+\setbeamercolor*{palette tertiary}{fg=cream,bg=bluUnicam} 
+\setbeamercolor*{palette quaternary}{fg=black,bg=black!10} 
+
+\setbeamercolor*{background canvas}{bg=greenBG}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Author data and Logo %%%%%%%%%%%%%%%%%%%%%%%%%%
+\subtitle{$<$Put Subtitle Here$>$}
+\author[shortname]{
+    {\textbf{Francesco Moschella\\}}
+    {\small{w/\\}}
+    {\textbf{GitHub Copilot\\}}
+}
+
+\date{
+    \vspace*{-0.7cm}
+	\begin{figure}[htpb!]
+    	\centering
+        \includegraphics[width=0.15\textwidth]{resources/figures/utils/logo}
+    \end{figure}
+    \today
+}
+
+\newcommand{\red}[1]{{\color{red}#1}}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{utils/titlepage}
+\input{utils/outline}
+\input{utils/stop_me_banner}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{lectures/lecture_01/introduction/me}
+\input{lectures/lecture_01/introduction/you}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{lectures/lecture_01/environment_setup/environment_setup}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{lectures/lecture_01/basic_concepts/basics}
+\input{lectures/lecture_01/basic_concepts/basic_examples}
+\input{lectures/lecture_01/basic_concepts/scope}
+\input{lectures/lecture_01/basic_concepts/scope_examples}
+\input{lectures/lecture_01/basic_concepts/tuples}
+\input{lectures/lecture_01/basic_concepts/tuples_examples}
+\input{lectures/lecture_01/basic_concepts/lists}
+\input{lectures/lecture_01/basic_concepts/lists_examples}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{lectures/lecture_01/functions/core_concepts}
+\input{lectures/lecture_01/functions/core_concepts_examples}
+\input{lectures/lecture_01/functions/guards}
+\input{lectures/lecture_01/functions/guards_examples}
+\input{lectures/lecture_01/functions/recursion}
+\input{lectures/lecture_01/functions/recursion_examples}
+\input{lectures/lecture_01/functions/lambda}
+\input{lectures/lecture_01/functions/lambda_examples}
+\input{lectures/lecture_01/functions/pattern_matching}
+\input{lectures/lecture_01/functions/pattern_matching_examples}
+\input{lectures/lecture_01/functions/partial_application}
+\input{lectures/lecture_01/functions/partial_application_examples}
+\input{lectures/lecture_01/functions/higher_order}
+\input{lectures/lecture_01/functions/higher_order_examples}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{lectures/lecture_01/typing/type_system}
+\input{lectures/lecture_01/typing/type_system_examples}
+\input{lectures/lecture_01/typing/currying}
+\input{lectures/lecture_01/typing/currying_examples}
+\input{lectures/lecture_01/typing/polymorphism}
+\input{lectures/lecture_01/typing/polymorphism_examples}
+\input{lectures/lecture_01/typing/type_classes}
+\input{lectures/lecture_01/typing/type_classes_examples}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{lectures/lecture_01/monads/monads}
+\input{lectures/lecture_01/monads/monads_examples}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{lectures/lecture_01/type_inference/type_inference}
+\input{lectures/lecture_01/type_inference/type_inference_examples}
+% NOTE: These last topics may require more slides
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{utils/acknowledgements}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
