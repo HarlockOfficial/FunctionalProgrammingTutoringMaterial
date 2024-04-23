@@ -4,7 +4,7 @@ x = 5
 y :: Integer
 y = x + 5
 
--- NOTE: useless local binding, why? 
+-- QUESTION: useless local binding, why? 
 z :: Integer 
 z = y
     where 
