@@ -3,4 +3,23 @@
     \begin{block}{Definition}
         Type inference is the process of determining the type of an expression in a programming language.
     \end{block}
+    \begin{block}{Rules}
+        \begin{enumerate}
+            \item The type of a variable is the type of the value it is bound to.
+            \item The type of a function is the type of its arguments and return value.
+            \item The type of an expression is the type of the value it evaluates to.
+        \end{enumerate}
+    \end{block}
+\end{frame}
+\begin{frame}
+    \begin{block}{Steps}
+        \begin{enumerate}
+            \item Assign every variable a unique type variable.
+            \item Assign every function its type with new unique type variables.
+            \item For each subexpression of the expression, generate equations of types.
+            \item Resolve the equations until no further simplification is possible.
+        \end{enumerate}
+        NOTE: Conflicting types imply a type error, otherwise the expression is well-typed and the type has been inferred.
+        \url{https://www.youtube.com/watch/bv7aenMgSkg}
+    \end{block}
 \end{frame}
